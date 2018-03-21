@@ -25,29 +25,21 @@ $(document).ready(function() {
     var number2 = parseInt($("#num2").val());
     var thisid = this.id
     var result;
-    switch() {
-      case thisid === "add":
+    switch(thisid) {
+      case "add":
         result = add(number1, number2);
         break;
-      case thisid === "subtract":
+      case "subtract":
         result = subtract(number1, number2);
         break;
-      case thisid === "multiply":
+      case "multiply":
         result = multiply(number1, number2);
         break;
-      case thisid === "divide":
+      case "divide":
         result = divide(number1, number2);
         break;
     }
     $("#output").text(result);
 
   });
-  // $("form#calc").submit(function(event) {
-  //   event.preventDefault();
-  //   var number1 = parseInt($("#num1").val());
-  //   var number2 = parseInt($("#num2").val());
-  //   var result = add(number1, number2);
-  //
-  //   $("#output").text(result);
-  // });
 });
