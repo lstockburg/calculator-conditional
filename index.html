@@ -19,10 +19,34 @@
             <label for="num2">2nd number:</label>
             <input id="num2" class="form-control" type="text">
           </div>
-          <button type="submit" class="btn btn-primary" id="add">Add!</button>
-          <button type="submit" class="btn btn-secondary" id="subtract">Subtract!</button>
-          <button type="submit" class="btn btn-success" id="multiply">Multiply!</button>
-          <button type="submit" class="btn btn-warning" id="divide">Divide!</button>
+          <div class="form-group">
+            <h3>What operation would you like to do</h3>
+            <div class="radio">
+              <label>
+                <input value="add" type="radio" name="op-type" checked>
+                Add
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input value="subtract" type="radio" name="op-type">
+                Subtract
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input value="multiply" type="radio" name="op-type">
+                Multiply
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input value="divide" type="radio" name="op-type">
+                Divide
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" >Submit!</button>
         </form>
         <div id="output" class="jumbotron">
 
